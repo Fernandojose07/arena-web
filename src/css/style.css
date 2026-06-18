@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* RESET */
+
+body{
+    min-height: 100vh; /* garantir que a altura da seção principal ocupe toda a altura da tela */
+
+    background-color: #171717;
+    color: #fff;
+
+    font-family: montserrat;
+}
+
+.container-principal{
+    width: 100%;
+    
+    display: flex; /* permitir que o conteudo seja centralizado de forma inteligente */
+    justify-content: center;
+    align-items: center;
+}
+
+/* TELA DE APRESENTAÇÃO */
+
+.tela{
+    display: none;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.tela.ativa{
+    display: flex;
+}
+
+.tela-apresentacao{
+    min-height: 100vh;
+    max-width: 1400px;
+
+    align-items: center;
+}
+
+.apresentacao-conteudo{
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.etiqueta-projeto{
+    color: #E78930;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.titulo-principal{
+    font-family: 'urban jungle';
+    font-size: 140px;
+}
+
+.descricao{
+    text-align: center;
+
+    margin-bottom: 8px;
+}
+
+.botao{
+    background-color: #9e5817;
+    color: #171717;
+
+    padding: 10px 60px;
+
+    border: none;
+
+    font-family: 'urban jungle';
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.botao:hover{
+    background-color: #E78930;
+
+    scale: 1.05;
+}
+
+/* TELA DE APRESENTAÇÃO */
+
+/* TELA DE SELEÇÃO */
+
+.tela-selecao{
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tela-selecao .cabecalho{
+    width: 900px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 60px;
+}
+
+.tela-selecao .cta{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.container-selecao{
+    width: 980px;
+
+    border-top: 4px solid #E78930;
+    margin-top: 30px;
+    padding-top: 30px;
+    gap: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carta-personagem{
+    width: 300px;
+    height: 350px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.4;
+
+    filter: grayscale(100);
+
+    transition: 0.3s;
+}
+
+.carta-personagem:hover{
+    opacity: 1;
+    filter: grayscale(0);
+    
+    scale: 1.05;
+    border: 4px solid #E78930;
+}
+
+.carta-personagem.selecionada{
+    opacity: 1;
+    box-shadow: #ffffff 0px 5px 10px, #000000 0px 6px 6px;
+}
+
+.samurai{
+    background-image: url('../img/Samurai\ Carmesim.jpg');
+}
+
+.espectro{
+    background-image: url('../img/Espectro\ das\ Trevas.jpg');
+}
+
+.carniceiro{
+    background-image: url('../img/Carniceiro\ das\ Chamas.jpg');
+}
+
+.feiticeira{
+    background-image: url('../img/Feiticeira\ do\ Vazio.jpg');
+}
+
+.reptil{
+    background-image: url('../img/Reptil\ Ceifador.jpg');
+}
+
+.tempestade{
+    background-image: url('../img/Tempestade\ Azul.jpg');
+}
+
+
+
+
+/* TELA DE SELEÇÃO */
